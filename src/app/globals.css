@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* — Releaf brand palette (from packaging: cream, sunflower yellow, leaf green, beige & brown) — */
+  --color-cream-50: #fcf8ee;
+  --color-cream-100: #f8f0dc;
+  --color-cream-200: #f1e3c5;
+  --color-cream-300: #e9d3a7;
+  --color-cream-400: #ddc08a;
+
+  --color-leaf-50: #f1f5e9;
+  --color-leaf-100: #e3edd2;
+  --color-leaf-200: #c9dcab;
+  --color-leaf-300: #aac486;
+  --color-leaf-400: #8bad62;
+  --color-leaf-500: #6c9148;
+  --color-leaf-600: #547539;
+  --color-leaf-700: #41592d;
+  --color-leaf-800: #324622;
+  --color-leaf-900: #27381b;
+
+  --color-sun-100: #fdefc5;
+  --color-sun-200: #fae29a;
+  --color-sun-300: #f7cf6c;
+  --color-sun-400: #f4bc45;
+  --color-sun-500: #eca827;
+  --color-sun-600: #d88e12;
+  --color-sun-700: #b06f0e;
+
+  --color-soil-400: #8a6440;
+  --color-soil-500: #6f4d2f;
+  --color-soil-600: #5a3d24;
+  --color-soil-700: #46301d;
+
+  --color-tulip: #e2654a;
+  --color-lav: #9c86d8;
+  --color-hyd: #6e62c6;
+  --color-lily: #f3ccd6;
+
+  --color-ink: #33402a;
+  --color-ink-soft: #67705c;
+
+  --font-display: var(--font-baloo), "Comic Sans MS", cursive;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), "Georgia", "Times New Roman", serif;
+
+  --shadow-soft: 0 6px 24px -8px rgb(70 48 29 / 0.18);
+  --shadow-lift: 0 16px 40px -12px rgb(70 48 29 / 0.25);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-wiggle: wiggle 2.4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-sun-300);
+  color: var(--color-leaf-900);
+}
+
+/* Soft scrollbar for the horizontal collection strip */
+.scroll-strip::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-strip::-webkit-scrollbar-thumb {
+  background: var(--color-cream-300);
+  border-radius: 999px;
+}
+.scroll-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Dotted "paper" texture used behind hero */
+.bg-speckle {
+  background-image: radial-gradient(var(--color-cream-200) 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\MRT45\\\\Downloads\" -File | Where-Object { $_.Extension -match '\\\\.\\(png|jpg|jpeg|webp\\)$' } | Select-Object Name, Length)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
