@@ -1,4 +1,4 @@
-# Releaf | Brand & Commerce Prototype
+# Releaf
 
 Pomodoro odaklanma ve dinlenme döngüsünü hareketli çiçek karakterleriyle anlatan; ürün keşfi, sepet ve sipariş demosunu bir araya getiren marka sitesi.
 
